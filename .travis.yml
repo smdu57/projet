@@ -6,3 +6,6 @@ deploy:
   api_key:
     secure: fW3v9RNd+prikUb9JIg5PggW273wwOATsMLHFsgAD1BLgop5c+fkiJdYDWm21Z6A76NSj32AqLp8aOaOCFDklnhHXY4VXTQHY9VZzQ55ydt11uSuC1q66iNvcJR9twv54aT5ohf3DVeOeryhK/fO6DB2WcSaS6NDipkCnVm2m6qXEwpA7FPD6iyajolO+VvNeghpF8GRQ+lZuGtJ4ZgX6018rqcTmmtppu6Kz/Yhqa5kYBxtHVM89lG5KHUjo6yaPPlECVGNsKLdn/attq4RMwSH1mKSLbSK/nFlriES/kA0NYpngr2z8+rXxKM4nlw50zjW+WPhvuJhYuJ09HPYtGzU0TNVhLT/By2SbPwlf07MBaeiHw59rzxv2OW6KrYw9J3hj/b92P5DfxR/UnvhwR+5zieouX9kWl2CNIF8U5HRTluW1JdBfHnRH9qgWkZvYtqGyhs3QJSRvgK1pRiu60fTcATLz9E+vNt8/y8jwkBVcjDWCCJCYRegxA1Pvq7QARtuoJwL8YdptpCz/ReHKqnAox63lcCTQ0+0pueXxYcxB//dyXsGbu293wSAQne0QpiPaPizpmqi68qrP8iAGZs5KHltm77b0AvLfrsCVxhBLatbo+0ZqaCw4Kp42QEREBhSx2s6Yqpy35CMPQ9dlAMqWXtF/zRHDMq1T9bRAJY=
   app: webapp-simon
+run: "rake db:migrate"
+  before_script:
+- psql -c 'create database travis_ci_test;' -U postgres
