@@ -3,7 +3,7 @@ class CreateStudents < ActiveRecord::Migration
     create_table :students do |t|
       t.string :name
       t.string :lastname
-      t.date :birthdate
+      t.date :birthday
 
       t.timestamps null: false
     end
