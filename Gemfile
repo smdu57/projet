@@ -45,3 +45,4 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'hover-rails'
 gem 'nominatim'
 gem 'simplecov', require: false, group: :test
+gem 'rspec'
