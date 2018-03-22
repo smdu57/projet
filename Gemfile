@@ -46,3 +46,4 @@ gem 'hover-rails'
 gem 'nominatim'
 gem 'simplecov', require: false, group: :test
 gem 'rspec'
+gem 'forecast_io'
